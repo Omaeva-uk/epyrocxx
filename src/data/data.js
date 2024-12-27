@@ -16,6 +16,77 @@ const servicesData = [
         typesOfServce: ["Industrial Epoxy Flooring Service", "Anti Static Epoxy Flooring", "Chemical Resistant Epoxy Flooring", "Epoxy Cementitious Flooring", "Industrial Epoxy Flooring Service", "Other"]
     }
 ]
+
+const typesOfService = [
+    {
+        id: 1,
+        serviceName: "Industrial Epoxy Flooring Service",
+        heroPara1: "Transform your industrial space with our top-of-the-line epoxy flooring solutions. Durable, easy to maintain, and built to withstand the toughest environments.",
+        heroPara2: "Our expert team ensures seamless installation and superior quality, providing you with a flooring system that's not only functional but also aesthetically pleasing.",
+        heroImg1: "/assets/service-page.jpg",
+        heroImg2: "/assets/service-page.jpg",
+        serviceImg: "/assets/service-page.jpg",
+        servicePara: "Our Industrial Epoxy Flooring Service is designed to meet the rigorous demands of industrial environments. We use high-grade materials to deliver a robust and long-lasting flooring solution that can handle heavy machinery, high foot traffic, and chemical spills. Our epoxy floors are resistant to wear and tear, ensuring your workspace remains safe and efficient. With a variety of finishes and colors available, we can customize your flooring to match your specific needs and branding. Trust our experienced professionals to deliver a flawless installation that enhances the functionality and appearance of your industrial space.",
+        tags:["EpoxyFlooring", "IndustrialFlooring", "DurableFloors"]
+    },
+    {
+        id: 2,
+        serviceName: "Anti Static Epoxy Flooring",
+        heroPara1: "Transform your industrial space with our top-of-the-line epoxy flooring solutions. Durable, easy to maintain, and built to withstand the toughest environments.",
+        heroPara2: "Our expert team ensures seamless installation and superior quality, providing you with a flooring system that's not only functional but also aesthetically pleasing.",
+        heroImg1: "/assets/service-page.jpg",
+        heroImg2: "/assets/service-page.jpg",
+        serviceImg: "/assets/service-page.jpg",
+        servicePara: "Our Industrial Epoxy Flooring Service is designed to meet the rigorous demands of industrial environments. We use high-grade materials to deliver a robust and long-lasting flooring solution that can handle heavy machinery, high foot traffic, and chemical spills. Our epoxy floors are resistant to wear and tear, ensuring your workspace remains safe and efficient. With a variety of finishes and colors available, we can customize your flooring to match your specific needs and branding. Trust our experienced professionals to deliver a flawless installation that enhances the functionality and appearance of your industrial space.",
+        tags:["EpoxyFlooring", "IndustrialFlooring", "DurableFloors"]
+    },
+    {
+        id: 3,
+        serviceName: "Chemical Resistant Epoxy Flooring",
+        heroPara1: "Transform your industrial space with our top-of-the-line epoxy flooring solutions. Durable, easy to maintain, and built to withstand the toughest environments.",
+        heroPara2: "Our expert team ensures seamless installation and superior quality, providing you with a flooring system that's not only functional but also aesthetically pleasing.",
+        heroImg1: "/assets/service-page.jpg",
+        heroImg2: "/assets/service-page.jpg",
+        serviceImg: "/assets/service-page.jpg",
+        servicePara: "Our Industrial Epoxy Flooring Service is designed to meet the rigorous demands of industrial environments. We use high-grade materials to deliver a robust and long-lasting flooring solution that can handle heavy machinery, high foot traffic, and chemical spills. Our epoxy floors are resistant to wear and tear, ensuring your workspace remains safe and efficient. With a variety of finishes and colors available, we can customize your flooring to match your specific needs and branding. Trust our experienced professionals to deliver a flawless installation that enhances the functionality and appearance of your industrial space.",
+        tags:["EpoxyFlooring", "IndustrialFlooring", "DurableFloors"]
+    },
+    {
+        id: 4,
+        serviceName: "Epoxy Cementitious Flooring",
+        heroPara1: "Transform your industrial space with our top-of-the-line epoxy flooring solutions. Durable, easy to maintain, and built to withstand the toughest environments.",
+        heroPara2: "Our expert team ensures seamless installation and superior quality, providing you with a flooring system that's not only functional but also aesthetically pleasing.",
+        heroImg1: "/assets/service-page.jpg",
+        heroImg2: "/assets/service-page.jpg",
+        serviceImg: "/assets/service-page.jpg",
+        servicePara: "Our Industrial Epoxy Flooring Service is designed to meet the rigorous demands of industrial environments. We use high-grade materials to deliver a robust and long-lasting flooring solution that can handle heavy machinery, high foot traffic, and chemical spills. Our epoxy floors are resistant to wear and tear, ensuring your workspace remains safe and efficient. With a variety of finishes and colors available, we can customize your flooring to match your specific needs and branding. Trust our experienced professionals to deliver a flawless installation that enhances the functionality and appearance of your industrial space.",
+        tags:["EpoxyFlooring", "IndustrialFlooring", "DurableFloors"]
+    },
+    {
+        id: 5,
+        serviceName: "Industrial Epoxy Flooring Service",
+        heroPara1: "Transform your industrial space with our top-of-the-line epoxy flooring solutions. Durable, easy to maintain, and built to withstand the toughest environments.",
+        heroPara2: "Our expert team ensures seamless installation and superior quality, providing you with a flooring system that's not only functional but also aesthetically pleasing.",
+        heroImg1: "/assets/service-page.jpg",
+        heroImg2: "/assets/service-page.jpg",
+        serviceImg: "/assets/service-page.jpg",
+        servicePara: "Our Industrial Epoxy Flooring Service is designed to meet the rigorous demands of industrial environments. We use high-grade materials to deliver a robust and long-lasting flooring solution that can handle heavy machinery, high foot traffic, and chemical spills. Our epoxy floors are resistant to wear and tear, ensuring your workspace remains safe and efficient. With a variety of finishes and colors available, we can customize your flooring to match your specific needs and branding. Trust our experienced professionals to deliver a flawless installation that enhances the functionality and appearance of your industrial space.",
+        tags:["EpoxyFlooring", "IndustrialFlooring", "DurableFloors"]
+    },
+    {
+        id: 6,
+        serviceName: "other",
+        heroPara1: "Transform your industrial space with our top-of-the-line epoxy flooring solutions. Durable, easy to maintain, and built to withstand the toughest environments.",
+        heroPara2: "Our expert team ensures seamless installation and superior quality, providing you with a flooring system that's not only functional but also aesthetically pleasing.",
+        heroImg1: "/assets/service-page.jpg",
+        heroImg2: "/assets/service-page.jpg",
+        serviceImg: "/assets/service-page.jpg",
+        servicePara: "Our Industrial Epoxy Flooring Service is designed to meet the rigorous demands of industrial environments. We use high-grade materials to deliver a robust and long-lasting flooring solution that can handle heavy machinery, high foot traffic, and chemical spills. Our epoxy floors are resistant to wear and tear, ensuring your workspace remains safe and efficient. With a variety of finishes and colors available, we can customize your flooring to match your specific needs and branding. Trust our experienced professionals to deliver a flawless installation that enhances the functionality and appearance of your industrial space.",
+        tags:["EpoxyFlooring", "IndustrialFlooring", "DurableFloors"]
+    },
+
+]
+
 const projectsData = [
     {
         sectionName: "Projects",
@@ -159,4 +230,4 @@ const ctaData = [
 ]
 
 
-export {aboutData, servicesData, projectsData, testimonialData, testimonials, faqData, ctaData};
+export {aboutData, servicesData, projectsData, testimonialData, testimonials, faqData, ctaData, typesOfService};

@@ -30,7 +30,7 @@ const Testimonial = () => {
     <div>
       {
         testimonialData.map((item, i) => (
-          <div key={i} className="flex justify-between items-center flex-wrap">
+          <div key={i} className="flex justify-between max-lg:flex-col-reverse lg:items-center gap-10 flex-wrap">
             <div className="max-w-2xl font-Luxenta space-y-5">
               <p>{item.sectionPara1}</p>
             </div>
@@ -44,7 +44,7 @@ const Testimonial = () => {
         ))
       }
 
-      <div className="mt-32 flex testimonial-wrapper p-6 pb-12 gap-8">
+      <div className="mt-32 max-sm:mt-10 flex testimonial-wrapper p-6 pb-12 gap-8">
         {
           testimonials.map((item) => (
             <div key={item.id} className=" font-Luxenta flex flex-col shadow-xl justify-center items-center min-w-[350px] p-8">
@@ -67,10 +67,10 @@ const Testimonial = () => {
       
       </div>
         <div className="flex justify-end gap-6">
-          <button className="prev w-[82px] h-[50px] border border-black rounded-full">
+          <button className="prev w-[82px] max-sm:w-[40px] h-[50px] max-sm:h-[25px] border border-black rounded-full">
             <i className={` fa-solid text-black fa-arrow-left`}></i>
           </button>
-          <button className="next w-[82px] h-[50px] border border-black rounded-full">
+          <button className="next w-[82px] max-sm:w-[40px] h-[50px] max-sm:h-[25px] border border-black rounded-full">
             <i className={` fa-solid text-black fa-arrow-right`}></i>
           </button>
         </div>

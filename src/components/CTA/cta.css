@@ -1,7 +1,7 @@
 .cta-form label{
     font-family: "Luxenta", "cursive";
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .cta-form input{
@@ -15,4 +15,11 @@
 
 .cta-form input::placeholder{
     font-size: 26px;
+}
+
+@media (max-width: 650px){
+    .cta-form label{
+        font-weight: 500;
+        font-size: 20px;
+    }
 }

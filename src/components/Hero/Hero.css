@@ -54,6 +54,8 @@
     object-fit: cover;
 }
 
+
+
 .shrink .left-content{
     flex: 1.2;
     opacity: 1;
@@ -71,4 +73,16 @@
 
 .shrink-text{
     color: #000000;
+}
+
+@media (max-width: 750px){
+    .right-content h1{
+        font-size: 60px;
+    }
+    .right-content p{
+        display: none;
+    }
+    .header-nav{
+        position: absolute !important;
+    }
 }

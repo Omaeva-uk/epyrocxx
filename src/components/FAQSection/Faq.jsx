@@ -11,7 +11,7 @@ const Faq = () => {
               <h2 className="font-Estoria text-4xl text-center text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h2>
               <p className="font-Luxenta text-gray-900">{item.sectionSubheadline}</p>
             </div>
-            <div className="grid w-full gap-14 grid-cols-2 mt-32">
+            <div className="grid w-full gap-14 grid-cols-1 md:grid-cols-2 max-smd:mt-10 mt-32">
             {console.log("Im here 1")}
             {
                 

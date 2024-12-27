@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { servicesData } from "../../data/data";
+import { Link } from "react-router-dom";
 
 const Services = () => {
 
@@ -12,27 +13,30 @@ const Services = () => {
       {
         servicesData.map((item, i) => (
           <div key={i}>
-            <div className="flex justify-between items-center flex-wrap">
-              <div className="flex-1">
+            <div className="flex justify-between items-center gap-10 flex-wrap">
+              <div className="flex-1 min-w-[300px]">
                   <img src={item.img} alt="servie-image" />    
               </div>
-              <div className="">
+              <div className="flex-1">
                 <p className="font-Lato flex-1 uppercase tracking-wider text-section">{item.sectionName}</p>
                 <h2 className="font-Estoria text-4xl lg:text-6xl text-h2 max-w-xl mt-2 mb-6">{item.sectionTitle}</h2>
                 <p className="font-Luxenta text-gray-900 max-w-lg">{item.sectionSubheadline}</p>
               </div>
               
             </div>
-            <div className="grid grid-cols-3 grid-rows-2 mt-32 gap-y-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 mt-32 gap-y-10">
               {item.typesOfServce.map((service, i) => (
-                <div key={i} onMouseEnter={() => setServiceHover(i)} onMouseLeave={() => setServiceHover(null)} className=" cursor-pointer border-r-2 hover:bg-action flex flex-col items-start justify-between border-black p-12">
-                  <h3 className={`${serviceHover === i && 'text-white'} font-Luxenta font-medium text-2xl max-w-xs`}>
-                    {service}
-                  </h3>
-                  <div className={` ${serviceHover === i && 'bg-white'} mt-6 self-end bg-action inline rounded-full p-4 px-5`}>
-                    <i className={`${serviceHover === i ? 'text-black' : "text-white"} fa-solid  fa-arrow-right`}></i>
+                <Link key={i} to={`/services/${i+1}`}>
+                  <div  onMouseEnter={() => setServiceHover(i)} onMouseLeave={() => setServiceHover(null)} className=" cursor-pointer border-r-2 hover:bg-action flex flex-col items-start justify-between border-black p-12 max-lg:p-2">
+                    <h3 className={`${serviceHover === i && 'text-white'} font-Luxenta font-medium text-2xl max-lg:text-xl max-w-xs`}>
+                      {service}
+                    </h3>
+                    <div className={` ${serviceHover === i && 'bg-white'} mt-6 self-end bg-action inline rounded-full p-4 max-lg:p-2 px-5 max-lg:px-3`}>
+                      <i className={`${serviceHover === i ? 'text-black' : "text-white"} fa-solid  fa-arrow-right`}></i>
+                    </div>
                   </div>
-                </div>
+                </Link>
+                
               ))}
             </div>
           </div>

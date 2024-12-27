@@ -2,8 +2,8 @@
 
 const Footer = () => {
   return (
-    <div className="bg-h2 text-white py-14 px-28 font-Luxenta">
-        <div className="flex flex-wrap justify-between items-start">
+    <div className="bg-h2 text-white py-14 max-xl:px-5 px-28 font-Luxenta">
+        <div className="flex flex-wrap gap-10 justify-between items-start">
             <div>
                 <img src="/epyrockxx-logo.svg" alt="epyrocxx logo" className="-ml-[15px] mb-2"/>
                 <p className="max-w-md text-[18px]">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>

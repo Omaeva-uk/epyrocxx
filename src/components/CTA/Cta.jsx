@@ -30,7 +30,7 @@ const Cta = () => {
       ))
     }
 
-    <div className="flex justify-center mt-32 gap-14">
+    <div className="flex justify-center max-md:flex-col mt-32 gap-14">
         <div className="flex-1">
             <img src="/assets/cta-image.png" alt="cta-image" className="w-full object-cover" />
         </div>
@@ -44,7 +44,7 @@ const Cta = () => {
                     <input type="text" id="phone" name="phone" />
                 <label htmlFor="description">Description</label>
                     <input type="text" id="description" name="description" />
-                <button className="bg-action text-white font-bold font-Luxenta text-2xl rounded-lg p-3 w-full max-w-[500px]">Submit</button>
+                <button className="bg-action text-white font-bold font-Luxenta max-md:text-lg text-2xl rounded-lg p-3 w-full max-w-[500px]">Submit</button>
             </form>
         </div>
     </div>

@@ -2,32 +2,70 @@ import {NavBar} from "../index.js"
 import Video from "/assets/hero-video.mp4";
 import "./Hero.css";
 import { useEffect } from "react";
+import { useState } from "react";
 
 const Hero = () => {
+
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 800);
 
 
     useEffect(() => {
         const heroSection = document.querySelector(".hero");
         const navLink = document.querySelector(".nav-links");
         const navLogo = document.querySelector("#nav-logo");
-    
-        window.addEventListener("scroll", () => {
-          heroSection.classList.add("shrink");
-          setTimeout(() => {
+        const ctaBtn = document.querySelector(".contact-us");
+
+        console.log(isDesktop);
+
+        window.addEventListener("resize", () => {
+          setIsDesktop(window.innerWidth > 800);
+        });
+
+        function scroll(){
+          if(!isDesktop) return;
+          if(isDesktop){
+            heroSection.classList.add("shrink");
+            setTimeout(() => {
               navLink.classList.add("shrink-text");
+              ctaBtn.classList.add("shrink-text");
               navLogo.setAttribute("src","/epyrockxx-logo-black.png");
           },800);
-        })
+          }
+          
+          
+        }
+        if(!isDesktop){
+          window.removeEventListener("scroll", scroll);
+          console.log("not desktop");
+          heroSection.classList.remove("shrink");
+          return;
+        }
+
+        if(isDesktop){
+          window.addEventListener("scroll", scroll);
+        }
+
+        
+        
+        
+
+        
+
+        
+          
+        
+    
+        
      
       
-    }, []);
+    }, [isDesktop]);
 
 
 
 
   return (
     <div className="relative">
-        <header className=" z-50 px-20 pt-6 header-nav ">
+        <header className=" z-50 px-20 max-lg:px-8 pt-6 header-nav ">
             <NavBar />
         </header>
         <div className="relative hero">
@@ -42,7 +80,7 @@ const Hero = () => {
               </div>
               <div className="right-content bg-blue-300 relative ">
                     <div className=" absolute inset-0 flex flex-col justify-center items-center -mt-40 video-text">
-                  <h1 className="text-[90px] text-h1 font-Estoria max-w-4xl text-center mx-auto leading-tight">
+                  <h1 className="lg:text-[90px] md:text-[60px]  text-h1 font-Estoria md:max-w-xl lg:max-w-4xl text-center mx-auto leading-tight">
                             Seamless Strength, Industrial Toughness
                   </h1>
                   <p className="font-Luxenta text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
