@@ -23,6 +23,14 @@
     }
 } */
 
+.header-nav{
+    position: fixed;
+    height: 75px;
+    top: 10px;
+    left: 0;
+    right: 0;  
+}
+
 .hero{
     display: flex;
     width: 100%;
@@ -72,6 +80,25 @@
 }
 
 .shrink-text{
+    color: #000000;
+}
+
+.header-nav{
+    transition: all 1s ease-in-out;
+}
+
+
+.scroll-header{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.scroll-header ul, .scroll-header button {
     color: #000000;
 }
 

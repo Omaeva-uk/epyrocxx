@@ -3,7 +3,7 @@ import { Footer, NavBar, ServicePageAbout, ServicePageHero } from "../../compone
 import {Testimonial, Cta} from "../../components";
 import { testimonialData, typesOfService } from "../../data/data";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ServicePage = () => {
 
@@ -24,13 +24,37 @@ const ServicePage = () => {
   console.log(suggestedServices);
 
 
+   useEffect(() => {
+  
+        const header = document.querySelector(".header-nav");
+        const heroSection = document.querySelector(".hero-service-page");
+  
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(!entry.isIntersecting){
+              header.classList.add("scroll-header");
+              console.log("nav must work");
+            }else{
+              header.classList.remove("scroll-header");
+            }
+          })
+        }, {
+  
+        });
+  
+  
+        observer.observe(heroSection);
+        
+      }, []);
+
+
 
   return (
     <div>
-      <section className='max-sm:p-4 p-16 py-4'>
+      <header className='max-sm:p-4 py-0 px-14 header-nav'>
         <NavBar color="black" />
-      </section>
-      <section className='max-sm:p-4 p-16 py-4 lg:mt-20'>
+      </header>
+      <section className='max-sm:p-4 p-16 py-4 mt-32 lg:mt-44 hero-service-page'>
         <ServicePageHero serviceId={params.id} />
       </section>
       <section className='max-sm:p-4 p-16 py-4 lg:mt-20'>

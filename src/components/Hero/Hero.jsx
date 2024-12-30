@@ -44,28 +44,39 @@ const Hero = () => {
         if(isDesktop){
           window.addEventListener("scroll", scroll);
         }
-
-        
-        
-        
-
-        
-
-        
-          
-        
-    
-        
-     
       
     }, [isDesktop]);
+
+    useEffect(() => {
+
+      const header = document.querySelector(".header-nav");
+      const heroSection = document.querySelector(".hero");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(!entry.isIntersecting){
+            header.classList.add("scroll-header");
+            console.log("nav must work");
+          }else{
+            header.classList.remove("scroll-header");
+          }
+        })
+      }, {
+
+      });
+
+
+      observer.observe(heroSection);
+      
+    }, []);
+    
 
 
 
 
   return (
     <div className="relative">
-        <header className=" z-50 px-20 max-lg:px-8 pt-6 header-nav ">
+        <header className=" z-50 px-20 max-lg:px-8 header-nav ">
             <NavBar />
         </header>
         <div className="relative hero">
