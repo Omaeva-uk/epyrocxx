@@ -17,7 +17,7 @@ const NavBar = ({color}) => {
   return (
     <nav className="flex justify-between relative items-center font-Luxenta text-white">
       <Link to="/">
-        <div className="w-[100px] h-[74px] flex justify-start items-center">
+        <div className="w-[110px] -ml-5 h-[74px] flex justify-start items-center">
           <picture>
             <source media="(max-width:750px)" srcSet="/epyrockxx-logo.svg" />
           </picture>
