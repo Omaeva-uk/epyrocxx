@@ -52,7 +52,7 @@ const Cta = () => {
                     <div key={item.id} className="flex-1 p-10 flex flex-col justify-center items-center gap-3 bg-[#FABC3F]">
                         <img src={item.icon} alt={item.heading} width={50} height={50} />
                         <h4 className="max-w-xs font-Luxenta text-2xl font-semibold">{item.heading}</h4>
-                        <p>{item.detail}</p>
+                        <p className="font-Luxenta">{item.detail}</p>
                         
                     </div>
                 ))}
@@ -71,10 +71,10 @@ const Cta = () => {
                         href=""
                     >
                         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-                        <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                        <h3 className="max-w-xs !pb-2 !m-0 font-bold font-Estoria  text-base text-slate-100">
                             Welcome to Epyrocxx!
                         </h3>
-                        <div className="text-base !m-0 !p-0 font-normal">
+                        <div className="text-base !m-0 !p-0 font-Luxenta font-normal">
                             <span className="text-slate-500 ">
                             We're passionate about engaging with you to bring your plans to life.
                             </span>

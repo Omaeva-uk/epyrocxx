@@ -18,8 +18,8 @@ const ServicePageHero = ({serviceId}) => {
             <div className="">
               <h3 className="text-2xl font-Estoria font-medium">Services</h3>
               <div className="flex max-md:flex-wrap gap-2 max-w-2xl">
-                <p className="">{service.heroPara1}</p>
-                <p>{service.heroPara2}</p>
+                <p className="font-Luxenta">{service.heroPara1}</p>
+                <p className="font-Luxenta">{service.heroPara2}</p>
               </div>
              
             </div>

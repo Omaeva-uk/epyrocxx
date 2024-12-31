@@ -21,7 +21,7 @@ const Faq = () => {
                             <div className="w-[110px] h-[50px] self-start flex justify-center items-center border-2 border-black rounded-full">{item.id}</div>
                             <div>
                                 <h3 className="font-Luxenta leading-tight text-[30px] max-w-md mb-3">{item.question}</h3>
-                                <p>{item.answer}</p>
+                                <p className="font-Luxenta">{item.answer}</p>
                             </div>
                         </div>
                    
