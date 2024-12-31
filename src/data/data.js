@@ -64,7 +64,7 @@ const typesOfService = [
     },
     {
         id: 5,
-        serviceName: "Industrial Epoxy Flooring Service",
+        serviceName: "Epoxy PU Hybrid Flooring (WB)",
         heroPara1: "Transform your industrial space with our top-of-the-line epoxy flooring solutions. Durable, easy to maintain, and built to withstand the toughest environments.",
         heroPara2: "Our expert team ensures seamless installation and superior quality, providing you with a flooring system that's not only functional but also aesthetically pleasing.",
         heroImg1: "/assets/service-page.jpg",

@@ -17,11 +17,11 @@ const NavBar = ({color}) => {
   return (
     <nav className="flex justify-between relative items-center font-Luxenta text-white">
       <Link to="/">
-        <div className="w-[143px] h-[74px] flex justify-start items-center">
+        <div className="w-[100px] h-[74px] flex justify-start items-center">
           <picture>
             <source media="(max-width:750px)" srcSet="/epyrockxx-logo.svg" />
           </picture>
-          <img src={`${color ? '/epyrockxx-logo-black.png' : '/epyrockxx-logo.svg'}`} alt="Epyrockxx Logo" id="nav-logo" className="w-full nav-logo h-full object-cover" />
+          <img src={`${color ? '/epyrockxx-logo-black.png' : '/epyrockxx-logo.svg'}`} alt="Epyrockxx Logo" id="nav-logo" className="w-full nav-logo object-cover" />
         </div>     
       </Link>
       {/* Desktop nav menu */}

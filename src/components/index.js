@@ -11,7 +11,8 @@ import Footer from "./Footer/Footer";
 import ServicePageHero from "./ServicePageHero/ServicePageHero";
 import ServicePageAbout from "./ServicePageAbout/ServicePageAbout";
 import Scrollto from "./Scrollto/ScrollTo";
+import CookieConsent from "./CookieConsent/CookieConsent";
 
 
 
-export {NavBar, Hero, Testing, About, Services, Projects, Testimonial, Faq, Cta, Footer, ServicePageHero, ServicePageAbout, Scrollto};
+export {NavBar, Hero, Testing, About, Services, Projects, Testimonial, Faq, Cta, Footer, ServicePageHero, ServicePageAbout, Scrollto, CookieConsent};

@@ -28,7 +28,7 @@ const Services = () => {
               {item.typesOfServce.map((service, i) => (
                 <Link key={i} to={`/services/${i+1}`}>
                   <div  onMouseEnter={() => setServiceHover(i)} onMouseLeave={() => setServiceHover(null)} className=" cursor-pointer border-r-2 hover:bg-action flex flex-col items-start justify-between border-black p-12 max-lg:p-2">
-                    <h3 className={`${serviceHover === i && 'text-white'} font-Luxenta font-medium text-2xl max-lg:text-xl max-w-xs`}>
+                    <h3 className={`${serviceHover === i && 'text-white'} font-Luxenta font-medium text-2xl max-lg:text-xl max-w-[250px]`}>
                       {service}
                     </h3>
                     <div className={` ${serviceHover === i && 'bg-white'} mt-6 self-end bg-action inline rounded-full p-4 max-lg:p-2 px-5 max-lg:px-3`}>
