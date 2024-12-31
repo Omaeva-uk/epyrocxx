@@ -1,13 +1,13 @@
 @font-face{
-    font-family: 'Roboto';
+    font-family: 'Erstoria';
     src: url('/fonts/Erstoria.ttf') format('truetype');
-    font-weight: 100 900;
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
-    font-family: 'Roboto';
+    font-family: 'Luxenta';
     src: url('/fonts/Luxenta-VF.ttf') format('truetype');
-    font-weight: 100 900;
+    font-weight: normal;
     font-style: normal;
 }

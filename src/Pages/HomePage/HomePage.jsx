@@ -1,5 +1,5 @@
 import "./homepage.css";
-import { Hero, Testing, About, Services, Projects, Testimonial, Faq, Cta, Footer } from '../../components/index';
+import { Hero, About, Services, Projects, Testimonial, Faq, Cta, Footer } from '../../components/index';
 
 
 
