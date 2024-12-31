@@ -91,7 +91,7 @@ const Hero = () => {
               </div>
               <div className="right-content bg-blue-300 relative ">
                     <div className=" absolute inset-0 flex flex-col justify-center items-center -mt-40 video-text">
-                  <h1 className="lg:text-[90px] md:text-[60px]  text-h1 font-Estoria md:max-w-xl lg:max-w-4xl text-center mx-auto leading-tight">
+                  <h1 className="lg:text-[90px] md:text-[60px] mt-[120px]  text-h1 font-Estoria md:max-w-xl lg:max-w-4xl text-center mx-auto leading-tight">
                             Seamless Strength, Industrial Toughness
                   </h1>
                   <p className="font-Luxenta text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
