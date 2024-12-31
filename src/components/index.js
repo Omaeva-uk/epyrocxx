@@ -1,6 +1,5 @@
 import NavBar from "./NavBar/NavBar";
 import Hero from "./Hero/Hero";
-import Testing from "./Testing/testing";
 import About from "./About/About";
 import Services from "./ServicesSection/Services";
 import Projects from "./Projects/Projects";
@@ -15,4 +14,4 @@ import CookieConsent from "./CookieConsent/CookieConsent";
 
 
 
-export {NavBar, Hero, Testing, About, Services, Projects, Testimonial, Faq, Cta, Footer, ServicePageHero, ServicePageAbout, Scrollto, CookieConsent};
+export {NavBar, Hero, About, Services, Projects, Testimonial, Faq, Cta, Footer, ServicePageHero, ServicePageAbout, Scrollto, CookieConsent};
