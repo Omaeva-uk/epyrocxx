@@ -15,7 +15,7 @@ const CookieConsent = ({cookieDecline}) => {
 
   return (
     <div className="bg-black w-full fixed bottom-0 z-[999] p-5">
-        <div className="flex justify-between items-center text-white">
+        <div className="flex flex-wrap gap-4 justify-between items-center text-white">
             <div>
                 <p>We use cookies to ensure you have the best experience on our website and to analyze site usage via Google Analytics.</p>
             </div>

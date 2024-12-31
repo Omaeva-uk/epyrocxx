@@ -4,6 +4,14 @@
     height: 100%;
 }
 
+.grid-image div{
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+}
+.grid-image div:hover{
+    transform: scale(1.01);
+}
+
 @media (min-width: 900px){
 
     .project-1{

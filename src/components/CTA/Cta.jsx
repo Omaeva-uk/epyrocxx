@@ -58,7 +58,7 @@ const Cta = () => {
       ))
     }
 
-        <div className="flex justify-center max-md:flex-col mt-32 gap-14">
+        <div className="flex justify-center max-md:flex-col lg:mt-32 gap-14">
             <div className="flex-1">
                 <div className="h-[30rem] w-full flex items-center justify-center ">
                     <PinContainer
@@ -67,14 +67,16 @@ const Cta = () => {
                     >
                         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
                         <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                            Aceternity UI
+                            Welcome to Epyrocxx!
                         </h3>
                         <div className="text-base !m-0 !p-0 font-normal">
                             <span className="text-slate-500 ">
-                            Customizable Tailwind CSS and Framer Motion Components.
+                            We're passionate about engaging with you to bring your plans to life.
                             </span>
                         </div>
-                        <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+                        <div className="flex flex-1 w-full overflow-hidden rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" >
+                            <img src="/assets/cta-card-img.jpg" alt="Epyrocxx" className="w-full h-full object-cover object-center" />
+                        </div>
                         </div>
                     </PinContainer>
                 </div>
