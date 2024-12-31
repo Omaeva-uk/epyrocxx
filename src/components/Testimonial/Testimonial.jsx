@@ -15,10 +15,10 @@ const Testimonial = () => {
     });
 
     prev.addEventListener("click", (e) => {
-      scrollContainer.scrollLeft -= 700;
+      scrollContainer.scrollLeft -= 330;
     });
     next.addEventListener("click", (e) => {
-      scrollContainer.scrollLeft += 700;
+      scrollContainer.scrollLeft += 330;
     });
     
   }, [])
@@ -47,7 +47,7 @@ const Testimonial = () => {
       <div className="mt-32 max-sm:mt-10 flex testimonial-wrapper p-6 pb-12 gap-8">
         {
           testimonials.map((item) => (
-            <div key={item.id} className=" font-Luxenta flex flex-col shadow-xl justify-center items-center min-w-[350px] p-8">
+            <div key={item.id} className=" font-Luxenta flex flex-col shadow-xl justify-center items-center md:min-w-[350px] min-w-[300px]  p-8">
               <div className="w-[100px] mb-4">
                 <img src={item.avatar} className="w-full" alt="Testimonees profile picture" />
               </div>

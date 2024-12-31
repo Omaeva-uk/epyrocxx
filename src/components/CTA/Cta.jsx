@@ -1,10 +1,14 @@
 import { ctaData } from "../../data/data";
 import "./cta.css";
 import { PinContainer } from "../ui/3d-pin";
+import { useState } from "react";
 
 const Cta = () => {
 
+    const [submit, setSubmit] = useState("Get your quote")
+
     const formKey = import.meta.env.VITE_FORM_KEY;
+    // console.log(import.meta.env.VITE_FORM_KEY);
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -25,7 +29,8 @@ const Cta = () => {
         }).then((res) => res.json());
     
         if (res.success) {
-          console.log("Success", res);
+        //   console.log("Success", res);
+        setSubmit("Submitted Successfully!")
         }
       };
 
@@ -85,14 +90,14 @@ const Cta = () => {
         <div className="flex-1">
             <form onSubmit={onSubmit} action="" className="flex h-full flex-col cta-form">
                 <label htmlFor="name">Your Name</label>
-                    <input type="text" id="name" name="name" />
+                    <input type="text" id="name" name="name" required/>
                 <label htmlFor="email">Your Email</label>
-                    <input type="text" id="email" name="email" />
+                    <input type="email" id="email" name="email" required />
                 <label htmlFor="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phone" />
+                    <input type="number" id="phone" name="phone" required />
                 <label htmlFor="description">Description</label>
-                    <input type="text" id="description" name="description" />
-                <button type="submit" className="bg-action text-white font-bold font-Luxenta max-md:text-lg text-2xl rounded-lg p-3 w-full max-w-[500px]">Submit</button>
+                    <input type="text" id="description" name="description" required/>
+                <button type="submit" className="bg-action text-white font-bold font-Luxenta max-md:text-lg text-2xl rounded-lg p-3 w-full max-w-[500px]">{submit}</button>
             </form>
         </div>
     </div>
