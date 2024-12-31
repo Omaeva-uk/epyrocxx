@@ -40,7 +40,7 @@ const Cta = () => {
     {
       ctaData.map((item, i) => (
         <div key={i}>
-            <div  className="flex flex-col justify-center items-center flex-wrap">
+            <div data-aos="fade-up" className="flex flex-col justify-center items-center flex-wrap">
                 <div className="flex flex-col justify-center items-center">
                     <p className="font-Lato uppercase tracking-wider text-section ">{item.sectionName}</p>
                     <h2 className="font-Estoria text-4xl text-center text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h2>
@@ -49,11 +49,10 @@ const Cta = () => {
             </div>
             <div className="mt-20 flex flex-wrap gap-7 justify-between text-h2 text-center">
                 {item.ctaCards.map((item) => (
-                    <div key={item.id} className="flex-1 p-10 flex flex-col justify-center items-center gap-3 bg-[#FABC3F]">
+                    <div data-aos="zoom-in" key={item.id} className="flex-1 p-10 flex flex-col justify-center items-center gap-3 bg-[#FABC3F]">
                         <img src={item.icon} alt={item.heading} width={50} height={50} />
                         <h4 className="max-w-xs font-Luxenta text-2xl font-semibold">{item.heading}</h4>
                         <p className="font-Luxenta">{item.detail}</p>
-                        
                     </div>
                 ))}
             </div>

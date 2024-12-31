@@ -8,12 +8,12 @@ const Projects = () => {
       {
         projectsData.map((item, i) => (
           <div key={i} className="flex justify-between  items-center  flex-wrap">
-            <div>
+            <div data-aos="fade-right">
               <p className="font-Lato uppercase tracking-wider text-section ">{item.sectionName}</p>
               <h2 className="font-Estoria text-4xl text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h2>
               <p className="font-Luxenta text-gray-900">{item.sectionSubheadline}</p>
             </div>
-            <div className="max-w-xl font-Luxenta space-y-5">
+            <div data-aos="fade=left" className="max-w-xl font-Luxenta space-y-5">
               <p>{item.sectionPara1}</p>
               
             </div>
@@ -21,7 +21,7 @@ const Projects = () => {
           
         ))
       }
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[233px] gap-7 mt-32 grid-image">
+      <div data-aos="fade-up" className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[233px] gap-7 mt-32 grid-image">
         <Link to="" className="project-1"><div ><img src="/assets/project-grid-1.png"  alt="Project image" /></div></Link>
         <Link to="" className="project-2"><div ><img src="/assets/project-grid-2.png" alt="Project image" /></div></Link>
         <Link to="" className="project-3"><div ><img src="/assets/project-grid-3.png" alt="Project image" /></div></Link>

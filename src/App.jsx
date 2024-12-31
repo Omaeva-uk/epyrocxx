@@ -3,6 +3,8 @@ import {HomePage, PrivacyPolicy, ServicePage} from "./Pages/index";
 import { Routes, Route, useParams } from "react-router-dom";
 import { Scrollto } from "./components";
 import { useCookies } from "react-cookie";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -11,6 +13,12 @@ import {CookieConsent} from "./components";
 
 
 function App() {
+
+  useEffect(() => {
+      Aos.init({
+        duration : 1000
+      });
+    }, []);
   
   const [isDeclined, setIsDeclined] = useState(null);
   const [cookies] = useCookies(["cookieConsent"]);
@@ -22,7 +30,7 @@ function App() {
   }
 
   return (
-      <main>
+      <main className=" overflow-hidden">
         {isDeclined === null ? (
           !cookies.cookieConsent && <CookieConsent cookieDecline={cookieDecline} />
         ):

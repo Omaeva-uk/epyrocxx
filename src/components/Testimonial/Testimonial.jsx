@@ -31,10 +31,10 @@ const Testimonial = () => {
       {
         testimonialData.map((item, i) => (
           <div key={i} className="flex justify-between max-lg:flex-col-reverse lg:items-center gap-10 flex-wrap">
-            <div className="max-w-2xl font-Luxenta space-y-5">
+            <div data-aos="fade-right" className="max-w-2xl font-Luxenta space-y-5">
               <p>{item.sectionPara1}</p>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <p className="font-Lato uppercase tracking-wider text-section ">{item.sectionName}</p>
               <h2 className="font-Estoria text-4xl text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h2>
               <p className="font-Luxenta text-gray-900">{item.sectionSubheadline}</p>
@@ -44,7 +44,7 @@ const Testimonial = () => {
         ))
       }
 
-      <div className="mt-32 max-sm:mt-10 flex testimonial-wrapper p-6 pb-12 gap-8">
+      <div data-aos="fade-up" className="mt-32 max-sm:mt-10 flex testimonial-wrapper p-6 pb-12 gap-8">
         {
           testimonials.map((item) => (
             <div key={item.id} className=" font-Luxenta flex flex-col shadow-xl justify-center items-center md:min-w-[350px] min-w-[300px]  p-8">

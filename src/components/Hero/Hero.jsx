@@ -3,13 +3,25 @@ import Video from "/assets/hero-video.mp4";
 import "./Hero.css";
 import { useEffect } from "react";
 import { useState } from "react";
+import Aos from "aos";
+
+import "aos/dist/aos.css";
 
 const Hero = () => {
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 800);
 
+  // useEffect(() => {
+  //   Aos.init({
+  //     duration : 1000
+  //   });
+  // }, []);
+
 
     useEffect(() => {
+
+
+
         const heroSection = document.querySelector(".hero");
         const navLink = document.querySelector(".nav-links");
         const navLogo = document.querySelector("#nav-logo");
@@ -90,8 +102,8 @@ const Hero = () => {
                 </div>
               </div>
               <div className="right-content bg-blue-300 relative ">
-                    <div className=" absolute inset-0 flex flex-col justify-center items-center -mt-40 video-text">
-                  <h1 className="lg:text-[90px] md:text-[60px] mt-[120px]  text-h1 font-Estoria md:max-w-xl lg:max-w-4xl text-center mx-auto leading-tight">
+                    <div data-aos="fade-down" className=" absolute inset-0 flex flex-col justify-center items-center -mt-40 video-text">
+                  <h1  className="lg:text-[90px] md:text-[60px] mt-[120px]  text-h1 font-Estoria md:max-w-xl lg:max-w-4xl text-center mx-auto leading-tight">
                             Seamless Strength, Industrial Toughness
                   </h1>
                   <p className="font-Luxenta text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>

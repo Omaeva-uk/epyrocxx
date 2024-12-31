@@ -13,18 +13,18 @@ const ServicePageHero = ({serviceId}) => {
 
   return (
     <div>
-          <div className="flex flex-wrap gap-6 lg:gap-24">
+          <div data-aos="fade-right" className="flex flex-wrap gap-6 lg:gap-24">
             <h1 className="lg:text-6xl text-5xl max-w-xl font-Estoria">{service.serviceName}</h1>
             <div className="">
               <h3 className="text-2xl font-Estoria font-medium">Services</h3>
-              <div className="flex max-md:flex-wrap gap-2 max-w-2xl">
+              <div  className="flex max-md:flex-wrap gap-2 max-w-2xl">
                 <p className="font-Luxenta">{service.heroPara1}</p>
                 <p className="font-Luxenta">{service.heroPara2}</p>
               </div>
              
             </div>
           </div>
-          <div className="flex flex-wrap max-sm:flex-col justify-between gap-8 mt-16 lg:mt-28">
+          <div data-aos="fade-left" className="flex flex-wrap max-sm:flex-col justify-between gap-8 mt-16 lg:mt-28">
             <div className="h-[150px] flex-1 border-b border-b-gray-400 pb-5"><img src={service.heroImg1} className="w-full h-full object-cover object-center" alt="Service image" /></div>
             <div className="h-[150px] flex-[1.2] border-b border-b-gray-400 pb-5"><img src={service.heroImg2} className="w-full h-full object-cover object-center"  alt="Service image" /></div>
           </div>

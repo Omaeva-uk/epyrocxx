@@ -64,7 +64,7 @@ const ServicePage = () => {
         <h2 className="font-Estoria text-4xl text-h2 lg:text-6xl max-w-lg mt-2 mb-6">Other Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 gap-y-10">
               {otherServices.map((service, i) => (
-                <Link key={i} to={`/services/${service.id}`}>
+                <Link data-aos="fade-up" key={i} to={`/services/${service.id}`}>
                   <div  onMouseEnter={() => setServiceHover(i)} onMouseLeave={() => setServiceHover(null)} className=" cursor-pointer border-r-2 hover:bg-action flex flex-col items-start justify-between border-black p-12 max-lg:p-2">
                     <h3 className={`${serviceHover === i && 'text-white'} font-Luxenta font-medium text-2xl max-lg:text-xl max-w-[280px]`}>
                       {service.serviceName}
