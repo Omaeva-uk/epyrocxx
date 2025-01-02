@@ -78,7 +78,7 @@ const Cta1 = () => {
                 <div className="flex justify-between my-6 flex-wrap gap-3">
                     <div className="flex-1">
                         <label htmlFor="phone">Phone</label>
-                        <input type="number" id="phone" name="Mobile No."  required/>
+                        <input type="tel" id="phone" name="Mobile No."  required/>
                     </div>
                     <div className="flex-1">
                         <label htmlFor="email">Email</label>
