@@ -38,7 +38,7 @@ const Cta1 = () => {
 
   return (
     <div data-aos="zoom-in" className="max-w-[1000px] mx-auto border flex flex-wrap">
-        <div className="flex-1 bg-[#f7f8fc] p-10 min-w-[500px]">
+        <div className="flex-1 bg-[#f7f8fc] p-10 ">
             {
                 ctaData.map((item, i) => (
                     <div key={i}>
@@ -48,8 +48,8 @@ const Cta1 = () => {
                         <div className="mt-5 flex flex-col gap-5">
                             {
                                 item.ctaCards.map((card, i) => (
-                                    <div key={card.id} className="flex gap-5 max-w-sm items-start">
-                                        <div className="border rounded-full p-5"><img src={card.icon} alt="contact-icon" width={card.id === 1 ? "55" : "34"} height={34} /></div>
+                                    <div key={card.id} className="flex max-sm:flex-col gap-5 max-w-sm items-start">
+                                        <div className="border rounded-full p-5"><img src={card.icon} alt="contact-icon" width={card.id === 1 ? "40" : "30"} height={34} /></div>
                                         <div>
                                             <h4 className="max-w-xs font-Luxenta text-xl font-semibold">{card.heading}</h4>
                                             <p className="font-Luxenta">{card.detail}</p>
