@@ -1,0 +1,17 @@
+form input{
+    outline: none;
+    background-color: #f7f8fc;
+    padding: 3px 10px;
+    width: 100%;
+    
+    
+}
+
+form label{
+    margin-right: 10px;
+}
+
+form input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+}

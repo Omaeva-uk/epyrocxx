@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Footer, NavBar, ServicePageAbout, ServicePageHero } from "../../components";
-import {Testimonial, Cta} from "../../components";
+import {Testimonial, Cta1} from "../../components";
 import { testimonialData, typesOfService } from "../../data/data";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -82,7 +82,7 @@ const ServicePage = () => {
         <Testimonial />
       </section>
       <section className='max-sm:p-4 p-16 py-4 lg:mt-20'>
-        <Cta />
+        <Cta1 />
       </section>
       <footer className='max-sm:p-4 mt-20'>
           <Footer />

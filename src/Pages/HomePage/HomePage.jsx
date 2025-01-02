@@ -1,5 +1,5 @@
 import "./homepage.css";
-import { Hero, About, Services, Projects, Testimonial, Faq, Cta, Footer } from '../../components/index';
+import { Hero, About, Services, Projects, Testimonial, Faq, Footer, Cta1 } from '../../components/index';
 
 
 
@@ -9,7 +9,7 @@ const HomePage = () => {
          <section className='h-[100vh]'>
           <Hero />
         </section>
-        <section id="about-us" className='max-sm:p-4 p-16 mt-44'>
+        <section id="about-us" className='max-sm:p-4 p-16 mt-20'>
           <About />
         </section>
         <section id="services" className='max-sm:p-4 p-16 max-lg:mt-10 mt-20'>
@@ -25,7 +25,7 @@ const HomePage = () => {
           <Faq />
         </section>
         <section id="contact-us" className='max-sm:p-4 p-16 mt-20'>
-          <Cta />
+          <Cta1 />
         </section>
         <footer className='max-sm:p-4 mt-20'>
           <Footer />
