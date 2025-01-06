@@ -11,3 +11,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'Good timing';
+    src: url('/fonts/good-timing.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Kopdher';
+    src: url('/fonts/Kopdher.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

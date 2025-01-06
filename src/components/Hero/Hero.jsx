@@ -40,6 +40,7 @@ const Hero = () => {
             setTimeout(() => {
               navLink.classList.add("shrink-text");
               ctaBtn.classList.add("shrink-text");
+              ctaBtn.classList.add("cta-bg");
               navLogo.setAttribute("src","/epyrockxx-logo-black.png");
           },800);
           }
@@ -93,17 +94,17 @@ const Hero = () => {
         </header>
         <div className="relative hero">
         
-              <div className="left-content">
+              <div className="left-content left-shadow">
               <div className="">
-                  <h1 className="text-[60px] font-Estoria max-w-xl text-center mx-auto leading-tight">
+                  <h1 className="text-[60px] font-Kopdher max-w-3xl left-hero-heading text-center mx-auto leading-[100%]">
                             Seamless Strength, Industrial Toughness
                   </h1>
-                  <p className="font-Luxenta text-center mx-auto max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
+                  <p className="font-Luxenta mt-5 text-center mx-auto max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
                 </div>
               </div>
               <div className="right-content bg-blue-300 relative ">
                     <div data-aos="fade-down" className=" absolute inset-0 flex flex-col justify-center items-center -mt-40 video-text">
-                  <h1  className="lg:text-[90px] md:text-[60px] mt-[120px]  text-h1 font-Estoria md:max-w-xl lg:max-w-4xl text-center mx-auto leading-tight">
+                  <h1  className="lg:text-[60px] md:text-[50px] mt-[120px]  text-h1 font-Kopdher md:max-w-xl lg:max-w-6xl text-center mx-auto leading-tight">
                             Seamless Strength, Industrial Toughness
                   </h1>
                   <p className="font-Luxenta text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>

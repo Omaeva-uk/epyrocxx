@@ -43,7 +43,7 @@ const Cta1 = () => {
                 ctaData.map((item, i) => (
                     <div key={i}>
                         <p className="font-Lato uppercase tracking-wider text-section ">{item.sectionName}</p>
-                        <h3 className="font-Estoria text-4xl text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h3>
+                        <h3 className="font-GoodTiming text-4xl text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h3>
                         <p className="font-Luxenta text-gray-900">{item.sectionSubheadline}</p>
                         <div className="mt-5 flex flex-col gap-5">
                             {

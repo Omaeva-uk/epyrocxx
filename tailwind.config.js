@@ -26,7 +26,15 @@ export default {
   			Lato: [
   				'Lato',
   				'serif'
-  			]
+  			],
+			GoodTiming: [
+				'Good timing',
+				'sans-serif'
+			],
+			Kopdher: [
+				'Kopdher',
+				'sans-serif'
+			],
   		},
   		colors: {
   			h1: '#F3FEB8',
