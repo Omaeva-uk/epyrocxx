@@ -95,11 +95,12 @@ const Hero = () => {
         <div className="relative hero">
         
               <div className="left-content left-shadow">
-              <div className="">
-                  <h1 className="text-[60px] font-Kopdher max-w-3xl left-hero-heading text-center mx-auto leading-[100%]">
+              <div className="flex flex-col justify-center items-center">
+                  <h1 className="text-[60px] font-Kopdher max-w-3xl left-hero-heading mt-24 text-center mx-auto leading-[100%]">
                             Seamless Strength, Industrial Toughness
                   </h1>
                   <p className="font-Luxenta mt-5 text-center mx-auto max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
+                  <div className="mouse"></div>
                 </div>
               </div>
               <div className="right-content bg-blue-300 relative ">
