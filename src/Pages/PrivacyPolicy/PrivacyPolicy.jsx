@@ -30,17 +30,17 @@ const PrivacyPolicy = () => {
       <ul>
         <li>
           <strong>Data Protection Officer</strong>:{" "}
-          <a href="mailto:monicachandru@3dtailor.space">
-            monicachandru@3dtailor.space
+          <a className=" underline" href="mailto:monicachandru@3dtailor.space">
+          monicachandru@3dtailor.space
           </a>
         </li>
         <li>
           <strong>Contact for Data Removal</strong>:{" "}
-          <a href="mailto:saravana@3dtailor.space">saravana@3dtailor.space</a>
+          <a className=" underline" href="mailto:saravana@3dtailor.space">saravana@3dtailor.space</a>
         </li>
         <li>
           <strong>Other Queries</strong>:{" "}
-          <a href="mailto:poovasokan@3dtailor.space">
+          <a className=" underline" href="mailto:poovasokan@3dtailor.space">
             poovasokan@3dtailor.space
           </a>
         </li>
@@ -135,7 +135,7 @@ const PrivacyPolicy = () => {
       </ul>
       <p>
         To exercise these rights, contact us at{" "}
-        <a href="mailto:saravana@3dtailor.space">saravana@3dtailor.space</a>.
+        <a className=" underline" href="mailto:info@epyrocxx.com">info@epyrocxx.com</a>.
       </p>
 
       <h2>7. Cookie Policy</h2>
@@ -186,17 +186,17 @@ const PrivacyPolicy = () => {
       <ul>
         <li>
           <strong>Data Protection Officer</strong>:{" "}
-          <a href="mailto:monicachandru@3dtailor.space">
+          <a className=" underline" href="mailto:monicachandru@3dtailor.space">
             monicachandru@3dtailor.space
           </a>
         </li>
         <li>
           <strong>Contact for Data Removal</strong>:{" "}
-          <a href="mailto:saravana@3dtailor.space">saravana@3dtailor.space</a>
+          <a className=" underline" href="mailto:saravana@3dtailor.space">saravana@3dtailor.space</a>
         </li>
         <li>
           <strong>Other Queries</strong>:{" "}
-          <a href="mailto:poovasokan@3dtailor.space">
+          <a className=" underline" href="mailto:poovasokan@3dtailor.space">
             poovasokan@3dtailor.space
           </a>
         </li>

@@ -124,7 +124,7 @@
 
 @media (max-width: 750px){
     .right-content h1{
-        font-size: 60px;
+        font-size: 40px;
     }
     .right-content p{
         display: none;

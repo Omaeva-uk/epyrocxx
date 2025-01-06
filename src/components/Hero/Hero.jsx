@@ -105,7 +105,7 @@ const Hero = () => {
               </div>
               <div className="right-content bg-blue-300 relative ">
                     <div data-aos="fade-down" className=" absolute inset-0 flex flex-col justify-center items-center -mt-40 video-text">
-                  <h1  className="lg:text-[60px] md:text-[50px] mt-[120px]  text-h1 font-Kopdher md:max-w-xl lg:max-w-6xl text-center mx-auto leading-tight">
+                  <h1  className="lg:text-[60px] md:text-[50px] text-[40px] mt-[120px]  text-h1 font-Kopdher md:max-w-xl lg:max-w-6xl text-center mx-auto leading-tight">
                             Seamless Strength, Industrial Toughness
                   </h1>
                   <p className="font-Luxenta text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
