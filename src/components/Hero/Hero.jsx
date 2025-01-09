@@ -4,12 +4,12 @@ import "./Hero.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import Aos from "aos";
+import { Boxes } from "../ui/background-boxes.jsx";
 
 import "aos/dist/aos.css";
 
 const Hero = () => {
 
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 800);
 
   // useEffect(() => {
   //   Aos.init({
@@ -18,47 +18,79 @@ const Hero = () => {
   // }, []);
 
 
+    const [width, setWidth] = useState(window.innerWidth);
+    console.log(width);
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+
+    //checking if its mobile or desktop
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, [width]);
+
+    const isMobile = width <= 1000;
+
+
+    
+
+
+    //adding split screen only on screen above 1000px
     useEffect(() => {
 
+      const heroSection = document.querySelector(".hero");
+      const navLink = document.querySelector(".nav-links");
+      const navLogo = document.querySelector("#nav-logo");
+      const ctaBtn = document.querySelector(".contact-us");
 
+      function heroScroll(){
 
-        const heroSection = document.querySelector(".hero");
-        const navLink = document.querySelector(".nav-links");
-        const navLogo = document.querySelector("#nav-logo");
-        const ctaBtn = document.querySelector(".contact-us");
-
-        console.log(isDesktop);
-
-        window.addEventListener("resize", () => {
-          setIsDesktop(window.innerWidth > 800);
-        });
-
-        function scroll(){
-          if(!isDesktop) return;
-          if(isDesktop){
-            heroSection.classList.add("shrink");
+        if(isMobile){
+          console.log("hello");
+          heroSection.classList.remove("shrink");
+            console.log(heroSection.classList)
+            return;
+        }else{
+          heroSection.classList.add("shrink");
+            console.log(heroSection.classList)
             setTimeout(() => {
-              navLink.classList.add("shrink-text");
-              ctaBtn.classList.add("shrink-text");
-              ctaBtn.classList.add("cta-bg");
-              navLogo.setAttribute("src","/epyrockxx-logo-black.png");
+            navLink.classList.add("shrink-text");
+            ctaBtn.classList.add("shrink-text");
+            ctaBtn.classList.add("cta-bg");
+            navLogo.setAttribute("src","/epyrockxx-logo-black.png");
           },800);
           }
-          
-          
         }
-        if(!isDesktop){
-          window.removeEventListener("scroll", scroll);
-          console.log("not desktop");
-          heroSection.classList.remove("shrink");
-          return;
-        }
+            
+            
 
-        if(isDesktop){
-          window.addEventListener("scroll", scroll);
+
+      if(isMobile){
+        console.log("mobile");
+        heroSection.classList.remove("shrink");
+        navLink.classList.remove("shrink-text");
+            ctaBtn.classList.remove("shrink-text");
+            ctaBtn.classList.remove("cta-bg");
+            navLogo.setAttribute("src","/epyrockxx-logo.svg");
+        //console.log(heroSection.classList)
+        return () => {
+          window.removeEventListener("scroll", heroScroll);
         }
+      }else{
+        console.log("desktop");
+        window.addEventListener("scroll", heroScroll);
+        return () => {
+          window.removeEventListener("scroll", heroScroll);
+        }
+      }
       
-    }, [isDesktop]);
+    }, [width])
+    
+          
 
     useEffect(() => {
 
@@ -67,9 +99,13 @@ const Hero = () => {
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
+
           if(!entry.isIntersecting){
-            header.classList.add("scroll-header");
+           
+              header.classList.add("scroll-header");
             console.log("nav must work");
+            
+            
           }else{
             header.classList.remove("scroll-header");
           }
@@ -81,7 +117,7 @@ const Hero = () => {
 
       observer.observe(heroSection);
       
-    }, []);
+    }, [width]);
     
 
 
@@ -94,14 +130,16 @@ const Hero = () => {
         </header>
         <div className="relative hero">
         
-              <div className="left-content left-shadow">
+              <div className=" overflow-hidden relative left-content left-shadow">
+                <Boxes />
               <div className="flex flex-col justify-center items-center">
-                  <h1 className="text-[60px] font-Kopdher max-w-3xl left-hero-heading mt-24 text-center mx-auto leading-[100%]">
+                  <h1 className="text-[60px] font-Kopdher max-w-3xl mt-24 text-center mx-auto leading-[100%]">
                             Seamless Strength, Industrial Toughness
                   </h1>
                   <p className="font-Luxenta mt-5 text-center mx-auto max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
                   <div className="mouse"></div>
                 </div>
+                
               </div>
               <div className="right-content bg-blue-300 relative ">
                     <div data-aos="fade-down" className=" absolute inset-0 flex flex-col justify-center items-center -mt-40 video-text">

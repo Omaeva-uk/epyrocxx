@@ -27,8 +27,8 @@ const Footer = () => {
             
         </div>
         <div className="flex flex-wrap justify-between items-center mt-20">
-            <p>© All Rights Reserved. Epyrockxxx</p>
-            <p>Designed and developed by <a href="https://www.omaeva.com/" target="_blank" className=" underline">Omaeva Ltd.</a></p>
+            <p>© All Rights Reserved. Epyrocxx</p>
+            <p>Designed and developed by <a href="https://www.omaeva.com/" target="_blank" className=" underline">Omaeva Ltd. UK</a></p>
             <Link to="/privacy-policy">
                 <p>Privacy Policy</p>
             </Link>

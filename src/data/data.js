@@ -3,8 +3,8 @@ const aboutData = [
         sectionName: "About us",
         sectionTitle: "Your Trusted Partner in Flooring Excellence",
         sectionSubheadline: "Crafting Exceptional Floors That Elevate Every Space.",
-        sectionPara1: "At Epyrockxxx, we specialize in creating stunning, durable, and functional flooring solutions tailored to your unique needs. With years of expertise and a commitment to quality, we ensure every project reflects superior craftsmanship and attention to detail.",
-        sectionPara2: "At Epyrockxxx, we specialize in creating stunning, durable, and functional flooring solutions tailored to your unique needs. With years of expertise and a commitment to quality, we ensure every project reflects superior craftsmanship and attention to detail."
+        sectionPara1: "At Epyrocxx, we specialize in creating stunning, durable, and functional flooring solutions tailored to your unique needs. With years of expertise and a commitment to quality, we ensure every project reflects superior craftsmanship and attention to detail.",
+        sectionPara2: "At Epyrocxx, we specialize in creating stunning, durable, and functional flooring solutions tailored to your unique needs. With years of expertise and a commitment to quality, we ensure every project reflects superior craftsmanship and attention to detail."
     }
 ]
 const servicesData = [

@@ -35,6 +35,10 @@ export default {
 				'Kopdher',
 				'sans-serif'
 			],
+			Exo: [
+				'Exo 2',
+				'sans-serif'
+			]
   		},
   		colors: {
   			h1: '#F3FEB8',

@@ -12,9 +12,9 @@ const About = () => {
             <div className="flex-1 min-w-[300px]">
               <p className="font-Lato uppercase tracking-wider text-section ">{item.sectionName}</p>
               <h2 className="font-GoodTiming text-4xl text-h2 lg:text-6xl max-w-xl mt-2 mb-6">{item.sectionTitle}</h2>
-              <p className="font-Luxenta text-gray-900">{item.sectionSubheadline}</p>
+              <p className="font-Exo text-gray-900">{item.sectionSubheadline}</p>
             </div>
-            <div data-aos="fade-left" className="max-w-2xl flex-1 font-Luxenta space-y-5">
+            <div data-aos="fade-left" className="max-w-2xl flex-1 font-Exo space-y-5">
               <p>{item.sectionPara1}</p>
               <p>{item.sectionPara2}</p>
             </div>

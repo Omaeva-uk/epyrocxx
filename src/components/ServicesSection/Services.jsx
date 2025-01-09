@@ -20,7 +20,7 @@ const Services = () => {
               <div data-aos="fade-left" className="flex-1">
                 <p className="font-Lato flex-1 uppercase tracking-wider text-section">{item.sectionName}</p>
                 <h2 className="font-GoodTiming text-4xl lg:text-6xl text-h2 max-w-xl mt-2 mb-6">{item.sectionTitle}</h2>
-                <p className="font-Luxenta text-gray-900 max-w-lg">{item.sectionSubheadline}</p>
+                <p className="font-Exo text-gray-900 max-w-lg">{item.sectionSubheadline}</p>
               </div>
               
             </div>
