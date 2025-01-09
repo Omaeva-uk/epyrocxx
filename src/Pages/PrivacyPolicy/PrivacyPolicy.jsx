@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
         <header className='max-sm:p-4 py-0 px-14 header-nav'>
             <NavBar color="black" />
         </header>
-        <div className="">
+        <div className=" font-Exo">
         <div style={{ padding: "2rem", maxWidth: "800px", margin: "0 auto",  marginTop: "5rem" }}>
       <h1>Privacy Policy</h1>
       <p>
@@ -24,24 +24,15 @@ const PrivacyPolicy = () => {
       <h2>1. Who We Are</h2>
       <p>
         Epyrocxx ("we," "our," or "us") is dedicated to providing
-        exceptional 3D design services while respecting your privacy. For any
+        exceptional flooring services while respecting your privacy. For any
         questions or concerns about this policy, please contact us:
       </p>
       <ul>
+       
         <li>
-          <strong>Data Protection Officer</strong>:{" "}
-          <a className=" underline" href="mailto:monicachandru@3dtailor.space">
-          monicachandru@3dtailor.space
-          </a>
-        </li>
-        <li>
-          <strong>Contact for Data Removal</strong>:{" "}
-          <a className=" underline" href="mailto:saravana@3dtailor.space">saravana@3dtailor.space</a>
-        </li>
-        <li>
-          <strong>Other Queries</strong>:{" "}
-          <a className=" underline" href="mailto:poovasokan@3dtailor.space">
-            poovasokan@3dtailor.space
+          <strong>Queries</strong>:{" "}
+          <a className=" underline" href="mailto:info@epyrocxx.com">
+            info@epyrocxx.com
           </a>
         </li>
       </ul>
@@ -185,19 +176,9 @@ const PrivacyPolicy = () => {
       </p>
       <ul>
         <li>
-          <strong>Data Protection Officer</strong>:{" "}
-          <a className=" underline" href="mailto:monicachandru@3dtailor.space">
-            monicachandru@3dtailor.space
-          </a>
-        </li>
-        <li>
-          <strong>Contact for Data Removal</strong>:{" "}
-          <a className=" underline" href="mailto:saravana@3dtailor.space">saravana@3dtailor.space</a>
-        </li>
-        <li>
           <strong>Other Queries</strong>:{" "}
-          <a className=" underline" href="mailto:poovasokan@3dtailor.space">
-            poovasokan@3dtailor.space
+          <a className=" underline" href="mailto:info@epyrocxx.com">
+            info@epyrocxx.com
           </a>
         </li>
       </ul>
@@ -210,7 +191,7 @@ const PrivacyPolicy = () => {
       </p>
 
       <p>
-        Thank you for trusting 3D Tailor Space with your personal data. Your
+        Thank you for trusting Epyrocxx with your personal data. Your
         privacy matters to us.
       </p>
     </div>

@@ -7,7 +7,7 @@ const Faq = () => {
         faqData.map((item, i) => (
           <div data-aos="fade-up" key={i} className="flex flex-col justify-center items-center flex-wrap">
             <div className="flex flex-col justify-center items-center">
-              <p className="font-Lato uppercase tracking-wider text-section ">{item.sectionName}</p>
+              <p className="font-Exo uppercase tracking-wider text-section ">{item.sectionName}</p>
               <h2 className="font-GoodTiming text-4xl text-center text-h2 lg:text-6xl max-w-2xl mt-2 mb-6">{item.sectionTitle}</h2>
               <p className="font-Exo text-gray-900">{item.sectionSubheadline}</p>
             </div>

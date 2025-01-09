@@ -211,19 +211,19 @@ const ctaData = [
                 id: 1,
                 icon: "/assets/address-icon.svg",
                 heading: "Address",
-                detail: "44 Sutton Wick Lane, Bridgend, United Kingdom,AB54 7YR.",
+                detail: "Epyrocxx, Madavilagam, Karur, Tamil Nadu 639001",
             },
             {
                 id: 2,
                 icon: "/assets/contact-icon.svg",
                 heading: "Contact",
-                detail: "+44   079 1437 4474",
+                detail: "+91 8299 666 721",
             },
             {
                 id: 3,
                 icon: "/assets/mail-icon.svg",
                 heading: "Email",
-                detail: "yourname@coompany.com",
+                detail: "info@epyrocxx.com",
             },
         ]
     }

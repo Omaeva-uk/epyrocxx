@@ -42,7 +42,7 @@ const Cta1 = () => {
             {
                 ctaData.map((item, i) => (
                     <div key={i}>
-                        <p className="font-Lato uppercase tracking-wider text-section ">{item.sectionName}</p>
+                        <p className="font-Exo uppercase tracking-wider text-section ">{item.sectionName}</p>
                         <h3 className="font-GoodTiming text-4xl text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h3>
                         <p className="font-Exo text-gray-900">{item.sectionSubheadline}</p>
                         <div className="mt-5 flex flex-col gap-5">
@@ -87,7 +87,7 @@ const Cta1 = () => {
                 </div>
                 <label htmlFor="message">Message</label>
                 <input type="text" id="message" name="Message" className="h-16" required/>
-                <button type="submit" className="bg-action mt-4 text-white font-bold font-Luxenta max-md:text-lg text-xl rounded-lg p-3 w-full ">{submit}</button>
+                <button type="submit" className="bg-action mt-4 text-white font-bold font-Exo max-md:text-lg text-xl rounded-lg p-3 w-full ">{submit}</button>
             </form>
         </div>
         <div></div>

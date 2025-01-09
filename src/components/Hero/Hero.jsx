@@ -136,7 +136,7 @@ const Hero = () => {
                   <h1 className="text-[60px] font-Kopdher max-w-3xl mt-24 text-center mx-auto leading-[100%]">
                             Seamless Strength, Industrial Toughness
                   </h1>
-                  <p className="font-Luxenta mt-5 text-center mx-auto max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
+                  <p className=" font-Exo mt-5 text-center mx-auto max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
                   <div className="mouse"></div>
                 </div>
                 
@@ -146,7 +146,7 @@ const Hero = () => {
                   <h1  className="lg:text-[60px] md:text-[50px] text-[40px] mt-[120px]  text-h1 font-Kopdher md:max-w-xl lg:max-w-6xl text-center mx-auto leading-tight">
                             Seamless Strength, Industrial Toughness
                   </h1>
-                  <p className="font-Luxenta text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
+                  <p className="font-Exo text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
                 </div>
                     <video autoPlay loop muted className="w-full h-full object-cover" poster="/assets/video-fallback-image.png">
                           <source src={Video} type="video/mp4" ></source>
