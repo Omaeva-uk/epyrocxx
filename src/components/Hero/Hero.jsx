@@ -131,7 +131,7 @@ const Hero = () => {
         <div className="relative hero">
         
               <div className=" overflow-hidden relative left-content left-shadow">
-                <Boxes />
+                {!isMobile && <Boxes />}
               <div className="flex flex-col justify-center items-center">
                   <h1 className="text-[60px] font-Kopdher max-w-3xl mt-24 text-center mx-auto leading-[100%]">
                             Seamless Strength, Industrial Toughness
