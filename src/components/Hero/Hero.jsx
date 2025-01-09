@@ -92,32 +92,32 @@ const Hero = () => {
     
           
 
-    useEffect(() => {
+    // useEffect(() => {
 
-      const header = document.querySelector(".header-nav");
-      const heroSection = document.querySelector(".hero");
+    //   const header = document.querySelector(".header-nav");
+    //   const heroSection = document.querySelector(".hero");
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+    //   const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach(entry => {
 
-          if(!entry.isIntersecting){
+    //       if(!entry.isIntersecting){
            
-              header.classList.add("scroll-header");
-            console.log("nav must work");
+    //           header.classList.add("scroll-header");
+    //         console.log("nav must work");
             
             
-          }else{
-            header.classList.remove("scroll-header");
-          }
-        })
-      }, {
+    //       }else{
+    //         header.classList.remove("scroll-header");
+    //       }
+    //     })
+    //   }, {
 
-      });
+    //   });
 
 
-      observer.observe(heroSection);
+    //   observer.observe(heroSection);
       
-    }, [width]);
+    // }, [width]);
     
 
 
@@ -125,7 +125,7 @@ const Hero = () => {
 
   return (
     <div className="relative">
-        <header className=" z-50 px-20 max-lg:px-8 header-nav ">
+        <header className=" z-50 max-lg:px-8 header-nav ">
             <NavBar />
         </header>
         <div className="relative hero">
@@ -148,7 +148,7 @@ const Hero = () => {
                   </h1>
                   <p className="font-Luxenta text-center mx-auto text-white max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
                 </div>
-                    <video autoPlay loop muted className="w-full h-full object-cover">
+                    <video autoPlay loop muted className="w-full h-full object-cover" poster="/assets/video-fallback-image.png">
                           <source src={Video} type="video/mp4" ></source>
                           hello
                     </video>

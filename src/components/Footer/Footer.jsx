@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-h2 text-white py-14 max-xl:px-5 px-28 font-Luxenta">
+    <div className="bg-h2 text-white py-14 max-xl:px-5 px-28 font-Exo">
         <div className="flex flex-wrap gap-10 justify-between items-start">
             <div>
                 <img src="/epyrockxx-logo.svg" alt="epyrocxx logo" className="-ml-[15px] mb-2"/>

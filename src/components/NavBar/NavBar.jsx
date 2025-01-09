@@ -1,12 +1,26 @@
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import "./navbar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const NavBar = ({color}) => {
 
   const [mobNav, setmobNav] = useState(false);
+
+  function scrollNavClose(){
+        setmobNav(false);
+      }
+
+
+  useEffect(() => {
+    
+    window.addEventListener("scroll", scrollNavClose );
+    console.log("scroll nav");
+    
+
+  }, [mobNav])
+  
 
   function handleNav(){
     setmobNav(!mobNav);
@@ -15,7 +29,7 @@ const NavBar = ({color}) => {
 
 
   return (
-    <nav className="flex justify-between relative items-center font-Luxenta text-white">
+    <nav className="flex scroll-header px-10 md:px-16 lg:px-20 justify-between relative items-center font-Luxenta text-white">
       <Link to="/">
         <div className="w-[110px] -ml-5 h-[74px] flex justify-start items-center">
           <picture>
@@ -25,7 +39,7 @@ const NavBar = ({color}) => {
         </div>     
       </Link>
       {/* Desktop nav menu */}
-      <ul className={`flex justify-between items-center mr-auto ml-24 gap-6 nav-links ${color && 'text-black'}`}>
+      <ul className={`flex justify-between items-center mr-28 ml-24 gap-10 max-md:hidden nav-links ${color && 'text-black'}`}>
         <HashLink to="/#services"><li>Services</li></HashLink>
         <HashLink to="/#projects"><li>Work</li></HashLink>
         <HashLink to="/#about-us"><li>About Us</li></HashLink>
@@ -33,15 +47,14 @@ const NavBar = ({color}) => {
       {/* Mobile nav menu */}
       {
         mobNav &&  (
-      <ul className={` w-full p-4 py-6 flex gap-4 lg:hidden absolute mobile-nav`}>
+      <ul className={` w-full p-2 py-6 pr-9 flex gap-2 lg:hidden absolute mobile-nav`}>
         <HashLink to="/#services"><li>Services</li></HashLink>
         <HashLink to="/#projects"><li>Work</li></HashLink>
         <HashLink to="/#about-us"><li>About Us</li></HashLink>
-        <HashLink to="/#contact-us"><button>Contact Us</button></HashLink>
       </ul>
         )
       }
-      <div className="md:hidden text-xl ml-auto" onClick={handleNav}><i className={`${color && 'text-black'} fa-solid fa-bars `}></i></div>
+      <div className="ham-menu hidden text-xl ml-auto" ><i className={`${color && 'text-black'} fa-solid fa-bars `} onClick={handleNav}></i><HashLink to="/#contact-us"><button><i className="fa-solid text-[18px] text-white ml-5 fa-phone"></i></button></HashLink></div>
       <HashLink to="/#contact-us"><button className={`contact-us ${color && 'text-black'}`}>Contact Us</button></HashLink>
     </nav>
   )

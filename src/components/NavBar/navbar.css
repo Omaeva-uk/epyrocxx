@@ -1,6 +1,7 @@
 .mobile-nav{
     background-color: white;
-    top: 52px;
+    top: 76px;
+    right: 0;
     color: black;
     display: flex;
     flex-direction: column;
@@ -13,9 +14,13 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@media (max-width: 750px){
+@media (max-width: 768px){
     .nav-links, .contact-us{
         display: none;
+    }
+
+    .ham-menu{
+        display: block;
     }
 
     .nav-logo{

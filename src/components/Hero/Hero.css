@@ -122,7 +122,7 @@
     color: #000000;
 }
 
-@media (max-width: 750px){
+@media (max-width: 780px){
     .right-content h1{
         font-size: 40px;
     }

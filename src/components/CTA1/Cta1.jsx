@@ -51,8 +51,8 @@ const Cta1 = () => {
                                     <div key={card.id} className="flex max-sm:flex-col gap-5 max-w-sm items-start">
                                         <div className="border rounded-full p-5"><img src={card.icon} alt="contact-icon" width={card.id === 1 ? "40" : "30"} height={34} /></div>
                                         <div>
-                                            <h4 className="max-w-xs font-Luxenta text-xl font-semibold">{card.heading}</h4>
-                                            <p className="font-Luxenta">{card.detail}</p>
+                                            <h4 className="max-w-xs font-Exo text-xl font-semibold">{card.heading}</h4>
+                                            <p className="font-Exo">{card.detail}</p>
                                         </div>
                                     </div>
                                 ))
