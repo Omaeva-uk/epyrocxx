@@ -1,5 +1,6 @@
 import "./homepage.css";
 import { Hero, About, Services, Projects, Testimonial, Faq, Footer, Cta1 } from '../../components/index';
+import { Helmet } from "react-helmet-async";
 
 
 

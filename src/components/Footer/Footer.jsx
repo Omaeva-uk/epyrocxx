@@ -12,8 +12,8 @@ const Footer = () => {
             <div className="flex flex-wrap gap-10">
             <div className="max-w-xs">
                 <h4 className="text-[24px] mb-2">Contact Us</h4>
-                <p className="text-[18px] max-w-[200px]">Epyrocxx, Madavilagam, Karur, Tamil Nadu 639001</p>
-                <p className="text-[18px]">+91 8299 666 721</p>
+                <p className="text-[18px] max-w-[200px]">ATLAS HARDWARES 49, Kamaraj Road Karur - 639001</p>
+                <p className="text-[18px]">+91 9442562478</p>
             </div>
             <div>
                 <h4 className="mb-2 text-[24px]">Follow us</h4>

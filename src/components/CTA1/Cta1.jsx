@@ -1,6 +1,7 @@
 import { ctaData } from "@/data/data";
 import "./Cta1.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -8,7 +9,7 @@ const Cta1 = () => {
 
     const [submit, setSubmit] = useState("Get your quote");
     const formKey = import.meta.env.VITE_FORM_KEY;
-    // console.log(import.meta.env.VITE_FORM_KEY);
+     //console.log(import.meta.env.VITE_FORM_KEY);
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -49,7 +50,7 @@ const Cta1 = () => {
                             {
                                 item.ctaCards.map((card, i) => (
                                     <div key={card.id} className="flex max-sm:flex-col gap-5 max-w-sm items-start">
-                                        <div className="border rounded-full p-5"><img src={card.icon} alt="contact-icon" width={card.id === 1 ? "40" : "30"} height={34} /></div>
+                                        <Link to={`${card.id === 2 ? 'tel:944-256-2478' : card.id === 3 ? 'mailto:info@epyrocxx.com' : card.id === 1 ? `https://maps.app.goo.gl/wcZ2ucTVRksdFjJz8` : '' }`} className="cursor-pointer"><div className="border rounded-full p-5"><img src={card.icon} alt="contact-icon" width={card.id === 1 ? "40" : "30"} height={34} /></div></Link>
                                         <div>
                                             <h4 className="max-w-xs font-Exo text-xl font-semibold">{card.heading}</h4>
                                             <p className="font-Exo">{card.detail}</p>

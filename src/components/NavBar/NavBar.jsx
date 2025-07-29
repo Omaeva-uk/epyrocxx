@@ -16,7 +16,7 @@ const NavBar = ({color}) => {
   useEffect(() => {
     
     window.addEventListener("scroll", scrollNavClose );
-    console.log("scroll nav");
+    //console.log("scroll nav");
     
 
   }, [mobNav])
@@ -41,7 +41,7 @@ const NavBar = ({color}) => {
       {/* Desktop nav menu */}
       <ul className={`flex justify-between items-center mr-28 ml-24 gap-10 max-md:hidden font-Exo nav-links ${color && 'text-black'}`}>
         <HashLink to="/#services"><li className="font-Exo">Services</li></HashLink>
-        <HashLink to="/#projects"><li>Work</li></HashLink>
+        <HashLink to="/work"><li>Work</li></HashLink>
         <HashLink to="/#about-us"><li>About Us</li></HashLink>
       </ul>
       {/* Mobile nav menu */}
@@ -49,7 +49,7 @@ const NavBar = ({color}) => {
         mobNav &&  (
       <ul className={` w-full p-2 py-6 pr-9 flex gap-2 font-Exo lg:hidden absolute mobile-nav`}>
         <HashLink to="/#services"><li>Services</li></HashLink>
-        <HashLink to="/#projects"><li>Work</li></HashLink>
+        <HashLink to="/work"><li>Work</li></HashLink>
         <HashLink to="/#about-us"><li>About Us</li></HashLink>
       </ul>
         )

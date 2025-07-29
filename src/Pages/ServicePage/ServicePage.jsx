@@ -4,6 +4,7 @@ import {Testimonial, Cta1} from "../../components";
 import { testimonialData, typesOfService } from "../../data/data";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const ServicePage = () => {
 
@@ -16,12 +17,15 @@ const ServicePage = () => {
   //console.log(service);
 
   const otherServices = typesOfService.filter(item => item.id !== parseInt(params.id));
-  console.log(otherServices);
+  //console.log(otherServices);
+
+  const metainfo  = typesOfService.find(item => parseInt(params.id) === parseInt(item.id));
+  console.log(metainfo)
   
   const suggestedServices = []
   otherServices.map(item => suggestedServices.push(item.serviceName));
 
-  console.log(suggestedServices);
+  //console.log(suggestedServices);
 
 
   //  useEffect(() => {
@@ -51,6 +55,11 @@ const ServicePage = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{metainfo.serviceName}</title>
+        <meta name="description" content={metainfo.heroPara1} />
+        <link rel="canonical" href={`/services/${metainfo.id}`} />
+      </Helmet>
       <header className='max-sm:p-4 py-0 px-14 header-nav'>
         <NavBar color="black" />
       </header>

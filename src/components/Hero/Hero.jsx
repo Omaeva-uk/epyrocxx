@@ -19,7 +19,7 @@ const Hero = () => {
 
 
     const [width, setWidth] = useState(window.innerWidth);
-    console.log(width);
+    //console.log(width);
 
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
@@ -50,13 +50,13 @@ const Hero = () => {
       function heroScroll(){
 
         if(isMobile){
-          console.log("hello");
+          //console.log("hello");
           heroSection.classList.remove("shrink");
-            console.log(heroSection.classList)
+            //console.log(heroSection.classList)
             return;
         }else{
           heroSection.classList.add("shrink");
-            console.log(heroSection.classList)
+            //console.log(heroSection.classList)
             setTimeout(() => {
             navLink.classList.add("shrink-text");
             ctaBtn.classList.add("shrink-text");
@@ -70,7 +70,7 @@ const Hero = () => {
 
 
       if(isMobile){
-        console.log("mobile");
+        //console.log("mobile");
         heroSection.classList.remove("shrink");
         navLink.classList.remove("shrink-text");
             ctaBtn.classList.remove("shrink-text");
@@ -81,7 +81,7 @@ const Hero = () => {
           window.removeEventListener("scroll", heroScroll);
         }
       }else{
-        console.log("desktop");
+        //console.log("desktop");
         window.addEventListener("scroll", heroScroll);
         return () => {
           window.removeEventListener("scroll", heroScroll);
@@ -128,6 +128,7 @@ const Hero = () => {
         <header className=" z-50 max-lg:px-8 header-nav ">
             <NavBar />
         </header>
+        <div className="bg-black flex justify-between items-center gap-2 text-primary banner-service">We do services all over India!<img src="/india-map.png" alt="India map" /></div>
         <div className="relative hero">
         
               <div className=" overflow-hidden relative left-content left-shadow">
@@ -136,7 +137,7 @@ const Hero = () => {
                   <h1 className="text-[60px] font-Kopdher max-w-3xl mt-24 text-center mx-auto leading-[100%]">
                             Seamless Strength, Industrial Toughness
                   </h1>
-                  <p className=" font-Exo mt-5 text-center mx-auto max-w-xl">Transforming Spaces, One Floor at a Time – Durable, Stylish, and Affordable Flooring Solutions for Every Home and Business.</p>
+                  <p className=" font-Exo mt-5 text-center mx-auto max-w-lg">Durable, Stylish, and Affordable Epoxy Flooring Solutions for Every Industrial Space</p>
                   <div className="mouse"></div>
                 </div>
                 

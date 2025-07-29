@@ -10,7 +10,7 @@ const Projects = () => {
           <div key={i} className="flex justify-between  items-center  flex-wrap">
             <div data-aos="fade-right">
               <p className="font-Exo uppercase tracking-wider text-section ">{item.sectionName}</p>
-              <h2 className="font-GoodTiming text-4xl text-h2 lg:text-6xl max-w-lg mt-2 mb-6">{item.sectionTitle}</h2>
+              <h2 className="font-GoodTiming text-4xl text-h2 lg:text-6xl max-w-xl mt-2 mb-6">{item.sectionTitle}</h2>
               <p className="font-Exo text-gray-900">{item.sectionSubheadline}</p>
             </div>
             <div data-aos="fade=left" className="max-w-xl font-Exo space-y-5">

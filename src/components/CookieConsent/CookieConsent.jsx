@@ -14,14 +14,14 @@ const CookieConsent = ({cookieDecline}) => {
     }
 
   return (
-    <div className="bg-black font-Exo w-full fixed bottom-0 z-[999] p-5">
+    <div className="bg-h2 font-Exo w-full fixed bottom-0 z-[999] p-3">
         <div className="flex flex-wrap gap-4 justify-between items-center text-white">
             <div>
                 <p>We use cookies to ensure you have the best experience on our website and to analyze site usage via Google Analytics.</p>
             </div>
             <div className="flex gap-8">
-                <button onClick={onDeclining} className="bg-red-600 py-3 px-5">Decline</button>
-                <button onClick={onAccepting} className="bg-green-600 py-3 px-5">Accept</button>
+                <button onClick={onDeclining} className="bg-red-600 rounded-lg py-3 px-5">Decline</button>
+                <button onClick={onAccepting} className="bg-green-600 py-3 rounded-lg px-5">Accept</button>
             </div>
         </div>
     </div>

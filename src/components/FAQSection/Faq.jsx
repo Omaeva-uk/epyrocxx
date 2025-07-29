@@ -12,13 +12,13 @@ const Faq = () => {
               <p className="font-Exo text-gray-900">{item.sectionSubheadline}</p>
             </div>
             <div className="grid w-full gap-14 grid-cols-1 md:grid-cols-2 max-smd:mt-10 mt-32">
-            {console.log("Im here 1")}
+           
             {
                 
                 item.questions.map(item => (
                     
                         <div data-aos="fade-up" className="flex gap-6" key={item.id}>
-                            <div className="w-[110px] h-[50px] self-start flex justify-center items-center border-2 border-black rounded-full">{item.id}</div>
+                            <div className="w-[50px] h-[50px] flex-none self-start flex justify-center items-center border-2 border-black rounded-full">{item.id}</div>
                             <div>
                                 <h3 className="font-Exo leading-tight text-[30px] max-w-md mb-3">{item.question}</h3>
                                 <p className="font-Exo">{item.answer}</p>
